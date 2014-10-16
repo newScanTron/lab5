@@ -21,7 +21,7 @@ class UnorderedList:
         current = self.head
         count = 0
         # Loop until you get to a Node that has next item as None
-        while current != None :
+        while current is not None :
             # Increment the count
             count = count + 1
             # Get the next node
@@ -35,7 +35,7 @@ class UnorderedList:
         found = False
         # Loop until you get to a Node that has next item as None
         # and the item has not been found
-        while current != None and not found:
+        while current None and not found:
             # See if the data of this item matches what we are looking for
             if current.getData() == item:
                 found = True
